@@ -1,5 +1,90 @@
 <!doctype html>
 <html lang="en">
+<<<<<<< HEAD
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The Snack Shack — quick, affordable snacks for students between classes." />
+    <title>The Snack Shack | Quick snacks, happy classes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#menu" aria-label="The Snack Shack menu">
+        <span class="brand-mark" aria-hidden="true">SS</span>
+        <span>The Snack Shack</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#menu">Menu</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#find-us">Find us</a>
+      </nav>
+      <a class="header-location" href="#find-us"><span class="pin-dot" aria-hidden="true"></span> Open today · Lunch</a>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> Fast fuel for busy students</p>
+          <h1 id="hero-title">Hungry?<br /><em>We’ve got you.</em></h1>
+          <p class="hero-text">Good snacks, student prices, zero long lunch detours. Pick your favorite and swing by before the bell.</p>
+          <a class="primary-button" href="#menu">See what’s cooking <span aria-hidden="true">↓</span></a>
+          <div class="hero-note"><span class="check-badge" aria-hidden="true">✓</span><span>Most bites are under <strong>$3</strong></span></div>
+        </div>
+        <div class="hero-visual" aria-label="A colorful snack spread">
+          <div class="shape shape-a"></div><div class="shape shape-b"></div><div class="shape shape-c"></div>
+          <div class="hero-card hero-card-main"><img src="https://images.unsplash.com/photo-1572449043416-55f4685c9bb7?auto=format&fit=crop&w=900&q=85" alt="A cold fruit smoothie" /></div>
+          <div class="hero-card hero-card-small"><img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=500&q=85" alt="Freshly baked chocolate chip cookies" /></div>
+          <div class="price-sticker"><span>from</span><strong>$1</strong></div>
+          <div class="hero-caption"><span class="sparkle" aria-hidden="true">✦</span> snack break, upgraded</div>
+        </div>
+      </section>
+
+      <section class="menu-section" id="menu" aria-labelledby="menu-title">
+        <div class="section-heading">
+          <div><p class="eyebrow"><span class="eyebrow-line"></span> The good stuff</p><h2 id="menu-title">Pick your<br /><span>power-up.</span></h2></div>
+          <p class="section-intro">Tap a snack for the price, ingredients, and exactly where to find us.</p>
+        </div>
+        <div class="filter-row" role="group" aria-label="Filter menu by category">
+          <button class="filter-button active" data-filter="all">All snacks <span>19</span></button>
+          <button class="filter-button" data-filter="sweet">Sweet <span>05</span></button>
+          <button class="filter-button" data-filter="savory">Savory <span>12</span></button>
+          <button class="filter-button" data-filter="fresh">Fresh &amp; cold <span>02</span></button>
+        </div>
+        <div class="menu-grid" id="menu-grid"></div>
+      </section>
+
+      <section class="how-section" id="how-it-works" aria-labelledby="how-title">
+        <div class="how-intro"><p class="eyebrow"><span class="eyebrow-line"></span> No time to waste</p><h2 id="how-title">Snack fast.<br /><span>Get to class.</span></h2></div>
+        <div class="steps">
+          <div class="step"><span class="step-number">01</span><h3>Choose your bite</h3><p>Find something good in the menu above. Everything is priced for student budgets.</p></div>
+          <div class="step"><span class="step-number">02</span><h3>Tap for the details</h3><p>Check the price, quick ingredient notes, and pickup spot before you head out.</p></div>
+          <div class="step"><span class="step-number">03</span><h3>Grab &amp; go</h3><p>Meet us at the cart during lunch. You’ll be back in the hallway in a flash.</p></div>
+        </div>
+      </section>
+
+      <section class="location-section" id="find-us" aria-labelledby="location-title">
+        <div><p class="eyebrow"><span class="eyebrow-line"></span> Catch us at lunch</p><h2 id="location-title">Right where<br /><span>you need us.</span></h2></div>
+        <div class="location-card"><div class="location-icon" aria-hidden="true">⌖</div><div><p class="location-label">Today’s pickup spot</p><h3>Courtyard · by the main doors</h3><p>11:25 AM – 12:35 PM · Every school day</p></div><a class="arrow-link" href="https://www.google.com/maps/search/?api=1&query=school+courtyard" target="_blank" rel="noreferrer" aria-label="Open courtyard location in Google Maps">↗</a></div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><a class="brand" href="#menu"><span class="brand-mark" aria-hidden="true">SS</span><span>The Snack Shack</span></a><p>Made for hungry minds.</p><p>© 2024 The Snack Shack</p></footer>
+
+    <div class="modal-backdrop" id="modal-backdrop" hidden>
+      <section class="detail-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" id="modal-close" aria-label="Close snack details">×</button>
+        <div class="modal-image-wrap"><img id="modal-image" src="" alt="" /></div>
+        <div class="modal-content"><p class="eyebrow" id="modal-category"></p><h2 id="modal-title"></h2><div class="modal-price" id="modal-price"></div><p id="modal-description"></p><div class="modal-meta"><span>⌖ <strong>Pickup:</strong> Courtyard by the main doors</span><span>◷ <strong>Ready:</strong> 11:25 AM – 12:35 PM</span></div><a class="primary-button modal-map-link" href="#find-us">Show me the pickup spot <span aria-hidden="true">→</span></a></div>
+      </section>
+    </div>
+  </body>
+=======
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,4 +109,5 @@
   <footer><a class="brand" href="#home"><span class="brand-mark">AC</span><span>Arcade Club</span></a><p>Made for quick breaks &amp; good times.</p><p>© 2026 Arcade Club</p></footer>
   <div class="game-modal" id="game-modal" hidden><div class="game-window" role="dialog" aria-modal="true" aria-labelledby="game-title"><button class="modal-close" id="modal-close" aria-label="Close game">×</button><div class="game-top"><div><p class="eyebrow"><span></span> Now playing</p><h2 id="game-title">Game</h2></div><div class="game-score" id="game-score">Score <strong>0</strong></div></div><div id="game-stage"></div><p class="game-help" id="game-help"></p></div></div>
 </body>
+>>>>>>> 73c6339c45a5355d7d8721b3c82af49dfce5eb45
 </html>
