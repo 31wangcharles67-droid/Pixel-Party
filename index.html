@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+<<<<<<< HEAD
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -83,4 +84,29 @@
       </section>
     </div>
   </body>
+=======
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Arcade Club — quick, fun browser games for your next break." />
+  <title>Arcade Club | Quick games, big fun</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>.level-picker{display:flex;gap:7px;flex-wrap:wrap;margin:0 0 14px}.level-button{border:1px solid #dfe5f1;background:#eef0f7;color:#162640;border-radius:6px;min-width:32px;padding:7px 9px;font-size:11px;font-weight:800}.level-button.active{background:#7657ef;color:#fff;border-color:#7657ef}.level-button:disabled{opacity:.38;cursor:not-allowed}.chess-board{grid-template-columns:repeat(8,minmax(0,1fr));grid-template-rows:repeat(8,minmax(0,1fr));width:100%;aspect-ratio:1/1}.chess-square{width:100%;height:100%;min-width:0;min-height:0;padding:0;aspect-ratio:1/1}.chess-clocks{display:flex;gap:8px;margin:10px 0}.chess-clocks span{flex:1;background:#eef0f7;border-radius:6px;padding:8px;font-size:11px;color:#65728a}.chess-clocks b{display:block;color:#162640;font-size:18px;margin-top:2px}.chess-clocks .active-clock{background:#e7e1ff;box-shadow:inset 0 0 0 2px #7657ef}.game-card{cursor:pointer}.game-card:focus-visible{outline:3px solid #ffe66d;outline-offset:4px}</style>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header"><a class="brand" href="#home"><span class="brand-mark">AC</span><span>Arcade Club</span></a><nav aria-label="Main navigation"><a href="#games">Games</a><a href="#about">About</a></nav><a class="play-pill" href="#games"><span class="live-dot"></span> Open arcade</a></header>
+  <main id="home">
+    <section class="hero" aria-labelledby="hero-title"><div class="hero-copy"><p class="eyebrow"><span></span> Your break, upgraded</p><h1 id="hero-title">Play something<br /><em>awesome.</em></h1><p class="hero-text">Three quick games, zero downloads, and plenty of ways to beat your high score. Pick a favorite and jump in.</p><a class="primary-button" href="#games">Browse games <span>↓</span></a><div class="hero-stats"><span><strong>03</strong> games</span><span><strong>∞</strong> replays</span><span><strong>0</strong> downloads</span></div></div><div class="hero-art" aria-label="Arcade controller illustration"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="gamepad"><div class="pad-cross"><i></i><b></b></div><div class="pad-buttons"><i></i><b></b></div><div class="pad-start"></div></div><span class="art-star star-one">✦</span><span class="art-star star-two">✦</span><span class="art-label">press start <b>↗</b></span></div></section>
+    <section class="games-section" id="games" aria-labelledby="games-title"><div class="section-heading"><div><p class="eyebrow"><span></span> Choose your challenge</p><h2 id="games-title">What are you<br /><em>playing?</em></h2></div><p>Easy to learn, fun to replay. Find your next obsession below.</p></div><div class="games-grid">
+      <article class="game-card chess-card"><div class="card-art chess-art"><div class="mini-board"></div><span class="card-number">01</span><span class="card-badge">Strategy</span></div><div class="card-body"><div class="card-title-row"><h3>Chess</h3><span class="play-arrow">↗</span></div><p>Classic strategy, quick matches. Outthink your opponent and claim the board.</p><button class="launch-button" data-game="chess">Play chess <span>→</span></button></div></article>
+      <article class="game-card parkour-card"><div class="card-art parkour-art"><div class="runner">◎</div><div class="platform p1"></div><div class="platform p2"></div><div class="platform p3"></div><span class="card-number">02</span><span class="card-badge">World map</span></div><div class="card-body"><div class="card-title-row"><h3>GeoGuessr</h3><span class="play-arrow">↗</span></div><p>Study a real place, drop your guess on the world map, and score big when you get close.</p><button class="launch-button" data-game="geoguessr">Play GeoGuessr <span>→</span></button></div></article>
+      <article class="game-card cookie-card"><div class="card-art cookie-art"><div class="giant-cookie">🍪</div><span class="card-number">03</span><span class="card-badge">Idle / chill</span></div><div class="card-body"><div class="card-title-row"><h3>Cookie Clicker</h3><span class="play-arrow">↗</span></div><p>Click for cookies, unlock upgrades, and build the sweetest empire around.</p><button class="launch-button" data-game="cookie">Play cookie clicker <span>→</span></button></div></article>
+    </div></section>
+    <section class="about-section" id="about"><div><p class="eyebrow"><span></span> The club rules</p><h2>Small break.<br /><em>Big energy.</em></h2></div><div class="about-copy"><p>Arcade Club is a tiny collection of games made for quick sessions and endless rematches.</p><div class="rule-row"><span>01</span><strong>Pick a game</strong><span>Choose the vibe that fits your break.</span></div><div class="rule-row"><span>02</span><strong>Set a score</strong><span>Then try to top it next time.</span></div></div></section>
+  </main>
+  <footer><a class="brand" href="#home"><span class="brand-mark">AC</span><span>Arcade Club</span></a><p>Made for quick breaks &amp; good times.</p><p>© 2026 Arcade Club</p></footer>
+  <div class="game-modal" id="game-modal" hidden><div class="game-window" role="dialog" aria-modal="true" aria-labelledby="game-title"><button class="modal-close" id="modal-close" aria-label="Close game">×</button><div class="game-top"><div><p class="eyebrow"><span></span> Now playing</p><h2 id="game-title">Game</h2></div><div class="game-score" id="game-score">Score <strong>0</strong></div></div><div id="game-stage"></div><p class="game-help" id="game-help"></p></div></div>
+</body>
+>>>>>>> 73c6339c45a5355d7d8721b3c82af49dfce5eb45
 </html>
