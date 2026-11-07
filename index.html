@@ -8,22 +8,142 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
+
   <body>
     <header class="site-header">
-      <a class="brand" href="#home" aria-label="Pixel Party home"><span class="brand-mark" aria-hidden="true">PP</span><span>Pixel Party</span></a>
-      <nav aria-label="Main navigation"><a href="#games">Games</a><a href="#about">About</a></nav>
-      <a class="play-pill" href="#games"><span class="live-dot" aria-hidden="true"></span> Open arcade</a>
+      <a class="brand" href="#home" aria-label="Pixel Party home">
+        <span class="brand-mark" aria-hidden="true">PP</span>
+        <span>Pixel Party</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#games">Games</a>
+        <a href="#about">About</a>
+      </nav>
+      <a class="play-pill" href="#games">
+        <span class="live-dot" aria-hidden="true"></span>
+        Open arcade
+      </a>
     </header>
+
     <main id="home">
-      <section class="hero" aria-labelledby="hero-title"><div class="hero-copy"><p class="eyebrow"><span></span> Your break, upgraded</p><h1 id="hero-title">Play something<br /><em>awesome.</em></h1><p class="hero-text">Three quick games, zero downloads, and plenty of ways to beat your high score. Pick a favorite and jump in.</p><a class="primary-button" href="#games">Browse games <span aria-hidden="true">↓</span></a><div class="hero-stats"><span><strong>03</strong> games</span><span><strong>∞</strong> replays</span><span><strong>0</strong> downloads</span></div></div><div class="hero-art" aria-label="Arcade controller illustration"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="gamepad"><div class="pad-cross"><i></i><b></b></div><div class="pad-buttons"><i></i><b></b></div><div class="pad-start"></div></div><span class="art-star star-one" aria-hidden="true">✦</span><span class="art-star star-two" aria-hidden="true">✦</span><span class="art-label">press start <b>↗</b></span></div></section>
-      <section class="games-section" id="games" aria-labelledby="games-title"><div class="section-heading"><div><p class="eyebrow"><span></span> Choose your challenge</p><h2 id="games-title">What are you<br /><em>playing?</em></h2></div><p>Easy to learn, fun to replay. Find your next obsession below.</p></div><div class="games-grid">
-        <article class="game-card chess-card"><div class="card-art chess-art"><div class="mini-board"></div><span class="card-number">01</span><span class="card-badge">Strategy</span></div><div class="card-body"><div class="card-title-row"><h3>Chess</h3><span class="play-arrow">↗</span></div><p>Classic strategy, quick matches. Outthink your opponent and claim the board.</p><button class="launch-button" data-game="chess">Play chess <span>→</span></button></div></article>
-        <article class="game-card parkour-card"><div class="card-art parkour-art"><div class="runner">◎</div><div class="platform p1"></div><div class="platform p2"></div><div class="platform p3"></div><span class="card-number">02</span><span class="card-badge">Racing</span></div><div class="card-body"><div class="card-title-row"><h3>Polytrack</h3><span class="play-arrow">↗</span></div><p>Steer through neon tracks, set your fastest time, and unlock new levels.</p><button class="launch-button" data-game="polytrack">Play Polytrack <span>→</span></button></div></article>
-        <article class="game-card geo-card"><div class="card-art geo-art"><div class="geo-globe">◎</div><span class="card-number">03</span><span class="card-badge">World map</span></div><div class="card-body"><div class="card-title-row"><h3>GeoGuessr</h3><span class="play-arrow">↗</span></div><p>Study a real place, drop your guess on the world map, and score big when you get close.</p><button class="launch-button" data-game="geoguessr">Play GeoGuessr <span>→</span></button></div></article>
-      </div></section>
-      <section class="about-section" id="about"><div><p class="eyebrow"><span></span> The party rules</p><h2>Small break.<br /><em>Big energy.</em></h2></div><div class="about-copy"><p>Pixel Party is a tiny collection of games made for quick sessions and endless rematches.</p><div class="rule-row"><span>01</span><strong>Pick a game</strong><span>Choose the challenge that fits your break.</span></div><div class="rule-row"><span>02</span><strong>Set a score</strong><span>Then try to top it next time.</span></div></div></section>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Your break, upgraded</p>
+          <h1 id="hero-title">Play something<br /><em>awesome.</em></h1>
+          <p class="hero-text">
+            Three quick games, zero downloads, and plenty of ways to beat your high score. Pick a favorite and jump in.
+          </p>
+          <a class="primary-button" href="#games">Browse games <span aria-hidden="true">↓</span></a>
+          <div class="hero-stats">
+            <span><strong>03</strong> games</span>
+            <span><strong>∞</strong> replays</span>
+            <span><strong>0</strong> downloads</span>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="Arcade controller illustration">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="gamepad">
+            <div class="pad-cross"><i></i><b></b></div>
+            <div class="pad-buttons"><i></i><b></b></div>
+            <div class="pad-start"></div>
+          </div>
+          <span class="art-star star-one" aria-hidden="true">✦</span>
+          <span class="art-star star-two" aria-hidden="true">✦</span>
+          <span class="art-label">press start <b>↗</b></span>
+        </div>
+      </section>
+
+      <section class="games-section" id="games" aria-labelledby="games-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span></span> Choose your challenge</p>
+            <h2 id="games-title">What are you<br /><em>playing?</em></h2>
+          </div>
+          <p>Easy to learn, fun to replay. Find your next obsession below.</p>
+        </div>
+
+        <div class="games-grid">
+          <article class="game-card chess-card">
+            <div class="card-art chess-art">
+              <div class="mini-board"></div>
+              <span class="card-number">01</span>
+              <span class="card-badge">Strategy</span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row"><h3>Chess</h3><span class="play-arrow">↗</span></div>
+              <p>Classic strategy, quick matches. Outthink your opponent and claim the board.</p>
+              <button class="launch-button" data-game="chess">Play chess <span>→</span></button>
+            </div>
+          </article>
+
+          <article class="game-card parkour-card">
+            <div class="card-art parkour-art">
+              <div class="runner">◎</div>
+              <div class="platform p1"></div>
+              <div class="platform p2"></div>
+              <div class="platform p3"></div>
+              <span class="card-number">02</span>
+              <span class="card-badge">Racing</span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row"><h3>Polytrack</h3><span class="play-arrow">↗</span></div>
+              <p>Steer through neon tracks, set your fastest time, and unlock new levels.</p>
+              <button class="launch-button" data-game="polytrack">Play Polytrack <span>→</span></button>
+            </div>
+          </article>
+
+          <article class="game-card geo-card">
+            <div class="card-art geo-art">
+              <div class="geo-globe">◎</div>
+              <span class="card-number">03</span>
+              <span class="card-badge">World map</span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row"><h3>GeoGuessr</h3><span class="play-arrow">↗</span></div>
+              <p>Study a real place, drop your guess on the world map, and score big when you get close.</p>
+              <button class="launch-button" data-game="geoguessr">Play GeoGuessr <span>→</span></button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <div>
+          <p class="eyebrow"><span></span> The party rules</p>
+          <h2>Small break.<br /><em>Big energy.</em></h2>
+        </div>
+        <div class="about-copy">
+          <p>Pixel Party is a tiny collection of games made for quick sessions and endless rematches.</p>
+          <div class="rule-row"><span>01</span><strong>Pick a game</strong><span>Choose the challenge that fits your break.</span></div>
+          <div class="rule-row"><span>02</span><strong>Set a score</strong><span>Then try to top it next time.</span></div>
+        </div>
+      </section>
     </main>
-    <footer><a class="brand" href="#home"><span class="brand-mark" aria-hidden="true">PP</span><span>Pixel Party</span></a><p>Made for quick breaks &amp; good times.</p><p>© 2026 Pixel Party</p></footer>
-    <div class="game-modal" id="game-modal" hidden><div class="game-window" role="dialog" aria-modal="true" aria-labelledby="game-title"><button class="modal-close" id="modal-close" aria-label="Close game">×</button><div class="game-top"><div><p class="eyebrow"><span></span> Now playing</p><h2 id="game-title">Game</h2></div><div class="game-score" id="game-score">Score <strong>0</strong></div></div><div id="game-stage"></div><p class="game-help" id="game-help"></p></div></div>
+
+    <footer>
+      <a class="brand" href="#home">
+        <span class="brand-mark" aria-hidden="true">PP</span>
+        <span>Pixel Party</span>
+      </a>
+      <p>Made for quick breaks &amp; good times.</p>
+      <p>© 2026 Pixel Party</p>
+    </footer>
+
+    <div class="game-modal" id="game-modal" hidden>
+      <div class="game-window" role="dialog" aria-modal="true" aria-labelledby="game-title">
+        <button class="modal-close" id="modal-close" aria-label="Close game">×</button>
+        <div class="game-top">
+          <div>
+            <p class="eyebrow"><span></span> Now playing</p>
+            <h2 id="game-title">Game</h2>
+          </div>
+          <div class="game-score" id="game-score">Score <strong>0</strong></div>
+        </div>
+        <div id="game-stage"></div>
+        <p class="game-help" id="game-help"></p>
+      </div>
+    </div>
   </body>
 </html>
